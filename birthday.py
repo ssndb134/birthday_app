@@ -54,13 +54,16 @@ st.markdown(
 # --------------------------------------------------
 # Main UI
 # --------------------------------------------------
-st.markdown("<h1 style='text-align:center; color:white;'>🎁 Birthday Surprise 🎁</h1>", unsafe_allow_html=True)
+st.markdown(
+    "<h1 style='text-align:center; color:white;'>🎁 Birthday Surprise 🎁</h1>",
+    unsafe_allow_html=True
+)
 
 if st.button("🎉 Click for surprise", use_container_width=True):
     st.balloons()
 
     mdd = """
-	:orange[
+    :orange[
 ████████████████████████████████████████████████████████
 ]
 
@@ -116,6 +119,8 @@ if st.button("🎉 Click for surprise", use_container_width=True):
 ████████████████████████████████████████████████████████
 ]
     """
-	st.markdown(mdd, unsafe_allow_html=True)
+
+    st.markdown(mdd, unsafe_allow_html=True)
+
     # Audio (plays after user interaction)
     st.audio("audio.mp3", autoplay=True)
