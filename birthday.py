@@ -74,7 +74,7 @@ if st.button("Click for surprise", use_container_width=True):
 ████████████████████████████████████████████████████████
 ]
 """
-	st.markdown(mdd, unsafe_allow_html=True)
+	st.markdown(mdd, unsafe_allow_html=False)
 	st.audio("audio.mp3", autoplay=True)
 
 
